@@ -17,7 +17,7 @@ def validate(function):
     print(f"Running {len(INPUTS)} Testcases")
     for i, (test_input, exp_output) in enumerate(zip(INPUTS, EXP_OUTPUTS)):
         func_output = function(test_input)
-        assert isinstance(func_output, int), "Function did not return a int"
+        assert isinstance(func_output, str), "Function did not return a str"
 
         if func_output == exp_output:
             print(f"Test Case {i+1} Passed")

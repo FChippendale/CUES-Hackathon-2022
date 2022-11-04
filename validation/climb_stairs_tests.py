@@ -16,8 +16,8 @@ def validate(function):
     
     print(f"Running {len(INPUTS)} Testcases")
     for i, (test_input, exp_output) in enumerate(zip(INPUTS, EXP_OUTPUTS)):
-        func_output = function(*test_input)
-        assert isinstance(func_output, bool), "Function did not return a bool"
+        func_output = function(test_input)
+        assert isinstance(func_output, int), "Function did not return a int"
         if i < 3:
             level = "Easy"
         else:
