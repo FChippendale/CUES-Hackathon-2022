@@ -15,7 +15,7 @@ def validate(function):
     print(f"Running {len(INPUTS)} Testcases")
     for i, (test_input, exp_output) in enumerate(zip(INPUTS, EXP_OUTPUTS)):
         func_output = function(*test_input)
-        assert isinstance(func_output, bool), "Function did not return bool"
+        assert isinstance(func_output, list), "Function did not return a list"
         if func_output == exp_output:
             print(f"Test Case {i+1} Passed")
         else:
