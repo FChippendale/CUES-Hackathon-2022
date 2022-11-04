@@ -4,7 +4,7 @@ def validate(function):
         r"()[()]{}",
         r"({)}",
         r"()({[}])",
-        r"((([[[{{{}}]}]])))"
+        r"((([[[{{{}}]}]])))",
         r"(){}[]{}()((((((((()[()]{}))))))))",
     ]
     EXP_OUTPUTS = [
@@ -13,7 +13,7 @@ def validate(function):
         False,
         False,
         False,
-        True
+        True,
     ]
     
     print(f"Running {len(INPUTS)} Testcases")
