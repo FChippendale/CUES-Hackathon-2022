@@ -1,5 +1,5 @@
 def validate(function):
-    EXP_OUTPUT = -5982218138347061190
+    EXP_OUTPUT = 4232911600771056735
     
     print(f"Running Testcase")
     func_output = function()
